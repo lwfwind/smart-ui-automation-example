@@ -5,7 +5,6 @@ import com.qa.framework.TestCaseBase;
 import com.qa.framework.ioc.annotation.AutoInject;
 import org.testng.annotations.Test;
 import test.datamodel.TestCaseData;
-import test.page.SearchPage;
 import test.service.SearchService;
 
 public class SearchWithServiceTest extends TestCaseBase {

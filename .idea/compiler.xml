@@ -22,18 +22,23 @@
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="smart-ui-framework" />
       </profile>
       <profile default="false" name="Annotation profile for test" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="test" />
+      </profile>
+      <profile default="false" name="Annotation profile for smart-ui-automation-example" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="smart-ui-automation-example" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="smart-ui-automation-example" target="1.5" />
+      <module name="smart-ui-automation-example" target="1.7" />
       <module name="smart-ui-framework" target="1.7" />
       <module name="test" target="1.7" />
     </bytecodeTargetLevel>
