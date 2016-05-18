@@ -8,7 +8,7 @@ import org.testng.Assert;
 public class SearchPage extends PageBase {
 
     @FindBy(id = "kw")
-    private WebElement searchTestBox;
+    public WebElement searchTestBox;
 
     public void searchFor(String text) {
         driver.get("http://www.baidu.com/");
