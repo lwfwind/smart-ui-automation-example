@@ -17,7 +17,7 @@ public class SearchPage extends PageBase {
     }
 
     public void verifyResult() {
-        Assert.assertTrue(getPageTitle().contains("百度搜索"));
+        Assert.assertTrue(getPageTitle().contains("百度搜索"),getPageTitle());
     }
 
 }
