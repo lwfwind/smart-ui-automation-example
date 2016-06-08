@@ -36,7 +36,7 @@
                                     <goal>java</goal>
                                 </goals>
                                 <configuration>
-                                    <mainClass>test.framework.generator.TestngXmlGenerator</mainClass>
+                                    <mainClass>com.qa.framework.generator.TestngXmlGenerator</mainClass>
                                     <systemProperties>
                                     </systemProperties>
                                     <arguments>
