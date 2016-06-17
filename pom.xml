@@ -18,6 +18,7 @@
         <profile>
             <id>dev</id>
             <properties>
+                <webPath>webPath=http://release.abc360.cn/</webPath>
                 <thread-count>1</thread-count>
             </properties>
             <activation>
@@ -31,6 +32,7 @@
                         <version>1.2.1</version>
                         <executions>
                             <execution>
+                                <id>TestngXmlGenerator</id>
                                 <phase>process-resources</phase>
                                 <goals>
                                     <goal>java</goal>
@@ -43,6 +45,25 @@
                                         <argument>${testcasefolder}</argument>
                                         <argument>${testngxml}</argument>
                                         <argument>${thread-count}</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>PropertiesSetting</id>
+                                <phase>process-test-resources</phase>
+                                <goals>
+                                    <goal>java</goal>
+                                </goals>
+                                <configuration>
+                                    <mainClass>com.qa.framework.generator.PropertiesSetting</mainClass>
+                                    <systemProperties>
+                                        <property>
+                                            <key>basedir</key>
+                                            <value>${basedir}</value>
+                                        </property>
+                                    </systemProperties>
+                                    <arguments>
+                                        <argument>${webPath}</argument>
                                     </arguments>
                                 </configuration>
                             </execution>
