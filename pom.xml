@@ -18,7 +18,7 @@
         <profile>
             <id>dev</id>
             <properties>
-                <webPath>webPath=http://release.abc360.cn/</webPath>
+                <webPath>webPath=http://www.baidu.com//</webPath>
                 <thread-count>1</thread-count>
             </properties>
             <activation>
