@@ -18,7 +18,7 @@
         <profile>
             <id>dev</id>
             <properties>
-                <webPath>webPath=http://www.baidu.com//</webPath>
+                <webPath>webPath=http://www.baidu.com/</webPath>
                 <thread-count>1</thread-count>
             </properties>
             <activation>
@@ -33,7 +33,7 @@
                         <executions>
                             <execution>
                                 <id>TestngXmlGenerator</id>
-                                <phase>process-resources</phase>
+                                <phase>process-test-resources</phase>
                                 <goals>
                                     <goal>java</goal>
                                 </goals>
@@ -78,7 +78,7 @@
         <dependency>
             <groupId>com.github.lwfwind.automation</groupId>
             <artifactId>smart-ui-framework</artifactId>
-            <version>3.0</version>
+            <version>3.1</version>
         </dependency>
     </dependencies>
 
