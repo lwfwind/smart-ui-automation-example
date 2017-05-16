@@ -1,6 +1,7 @@
 package test.testnglistener;
 
 import com.qa.framework.testnglistener.ICustomTestListener;
+import org.testng.ISuite;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 
@@ -23,6 +24,14 @@ public class TestListener implements ICustomTestListener {
 
     public void onTestStart(ITestResult tr){
         logger.info("onTestStart");
+    }
+
+    public void onFinish(ISuite iSuite){
+        logger.info(iSuite.getName() + " finish");
+    }
+
+    public void onStart(ISuite iSuite){
+        logger.info(iSuite.getName() + " start");
     }
 
     public void onStart(ITestContext testContext){
