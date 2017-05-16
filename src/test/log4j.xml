@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<!DOCTYPE log4j:configuration SYSTEM
+        "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
 
-<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+<log4j:configuration>
 
     <appender name="myConsole" class="org.apache.log4j.ConsoleAppender">
-        <layout class="test.framework.library.log4j.Log4jExPatternLayout">
+        <layout class="com.qa.framework.library.log4j.Log4jExPatternLayout">
             <param name="ConversionPattern" value="[%d{dd HH:mm:ss,SSS\} %-5p] [thread %T] [%t] %c{2\} - %m%n"/>
         </layout>
         <filter class="org.apache.log4j.varia.LevelRangeFilter">
@@ -18,8 +19,8 @@
         <param name="File" value="all.log"/>
         <param name="Append" value="false"/>
         <param name="MaxBackupIndex" value="10"/>
-        <layout class="org.apache.log4j.PatternLayout">
-            <param name="ConversionPattern" value="%p (%c:%L)- %m%n"/>
+        <layout class="com.qa.framework.library.log4j.Log4jExPatternLayout">
+            <param name="ConversionPattern" value="[%d{dd HH:mm:ss,SSS\} %-5p] [thread %T] [%t] %c{2\} - %m%n"/>
         </layout>
         <filter class="org.apache.log4j.varia.LevelRangeFilter">
             <param name="levelMin" value="debug"/>
